@@ -27,7 +27,7 @@ var svg = d3.select("svg"),
 
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
-//wie der endgraph ausfällt, lässt sich hauptsächlich hierbestimmten, allerdings hat die Distance Funktion sehr wenig einfluss
+
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.name; })
     .distance(function(d) {return (226-d.distance)*2}).strength(2.5))
