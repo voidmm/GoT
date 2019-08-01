@@ -70,7 +70,7 @@ d3.json("graph.json", function(error, graph) {
           .on("end", dragended));
 
   var lables = node.append("text")
-      .attr("font-size", function(d) {return Math.log(d.value)*3})
+      .attr("font-size", function(d) {return Math.log(d.value)*2})
       .text(function(d) {
         return d.name;
       })
